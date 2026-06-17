@@ -1,126 +1,365 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ridolfi Studio | Interior Design</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ridolfi Studio | Interior Design</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0f2230;
+color:#f4f1eb;
+font-family:Inter,sans-serif;
+line-height:1.7;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:30px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:100;
+background:rgba(15,34,48,.8);
+backdrop-filter:blur(10px);
+}
+
+.logo{
+font-family:"Cormorant Garamond",serif;
+font-size:34px;
+letter-spacing:6px;
+}
+
+nav a{
+color:#f4f1eb;
+text-decoration:none;
+margin-left:30px;
+font-size:14px;
+letter-spacing:2px;
+}
+
+.hero{
+height:100vh;
+background:url("nimbus-kitchen.png") center center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+background:rgba(0,0,0,.35);
+padding:60px;
+}
+
+.hero h1{
+font-family:"Cormorant Garamond",serif;
+font-size:72px;
+font-weight:500;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 30px;
+border:1px solid #d8c7b0;
+color:#d8c7b0;
+text-decoration:none;
+letter-spacing:2px;
+}
+
+section{
+padding:120px 10%;
+}
+
+.section-title{
+font-family:"Cormorant Garamond",serif;
+font-size:52px;
+margin-bottom:40px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:4px;
+}
+
+.quote{
+background:#132b3d;
+text-align:center;
+}
+
+.quote p{
+font-family:"Cormorant Garamond",serif;
+font-size:54px;
+max-width:900px;
+margin:auto;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.project{
+background:#162f42;
+}
+
+.project img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.project-content{
+padding:25px;
+}
+
+.project h3{
+font-family:"Cormorant Garamond",serif;
+font-size:34px;
+margin-bottom:10px;
+}
+
+.moodboard img{
+width:100%;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#d8c7b0;
+text-decoration:none;
+}
+
+footer{
+padding:50px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.1);
+}
+
+@media(max-width:900px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.projects{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.quote p{
+font-size:36px;
+}
+
+header{
+padding:20px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
+<header>
+
+<div class="logo">RIDOLFI STUDIO</div>
+
 <nav>
-  <div class="brand">RIDOLFI STUDIO</div>
-  <div class="menu">
-    <a href="#about">Chi sono</a>
-    <a href="#projects">Progetti</a>
-    <a href="#services">Servizi</a>
-    <a href="#contact">Contatti</a>
-  </div>
+<a href="#about">CHI SONO</a>
+<a href="#projects">PROGETTI</a>
+<a href="#contact">CONTATTI</a>
 </nav>
 
-<header class="hero">
-  <img src="blue-forest-bedroom.png" alt="Ridolfi Studio interior design" />
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <img class="logo" src="logo-ridolfi.PNG" alt="Ridolfi Studio logo" />
-    <h2>Interior Design Contemporaneo</h2>
-    <p>Progetti residenziali pensati per durare nel tempo.</p>
-    <a href="#projects" class="button">Scopri i progetti</a>
-  </div>
 </header>
 
-<section id="about" class="about">
-  <div>
-    <span class="eyebrow">Chi sono</span>
-    <h2>Francesco Ridolfi</h2>
-    <p>
-      Ridolfi Studio nasce da una visione precisa: creare interni eleganti,
-      funzionali e personali, dove materiali, luce e proporzioni dialogano
-      con l’identità di chi vive lo spazio.
-    </p>
-    <p>
-      Ogni progetto parte da un’idea forte e si sviluppa attraverso una
-      selezione attenta di colori, arredi, texture e illuminazione.
-    </p>
-  </div>
-  <img src="mood-board.png" alt="Moodboard Ridolfi Studio" />
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Interior Design pensato per durare.</h1>
+
+<p>
+Progetti residenziali contemporanei dove estetica,
+funzionalità e atmosfera convivono in equilibrio.
+</p>
+
+<a href="#projects" class="btn">SCOPRI I PROGETTI</a>
+
+</div>
+
 </section>
 
-<section class="manifesto">
-  <p>
-    Senza ispirazione esistono solo <em>spazi corretti</em>.<br>
-    Ma i progetti che durano nascono da <em>un’idea</em>.
-  </p>
+<section id="about">
+
+<h2 class="section-title">Chi Sono</h2>
+
+<div class="about">
+
+<div>
+
+<p>
+Mi chiamo Francesco Ridolfi.
+</p>
+
+<br>
+
+<p>
+Mi occupo di interior design residenziale con un approccio contemporaneo,
+attento ai materiali, alla luce e alla qualità della vita quotidiana.
+</p>
+
+<br>
+
+<p>
+Ogni progetto nasce dall'ascolto delle esigenze del cliente e dalla ricerca
+di soluzioni eleganti, funzionali e senza tempo.
+</p>
+
+</div>
+
+<img src="living-frame.jpg">
+
+</div>
+
 </section>
 
-<section id="projects" class="projects">
-  <span class="eyebrow">Portfolio</span>
-  <h2>Progetti selezionati</h2>
+<section class="quote">
 
-  <div class="grid">
-    <article>
-      <img src="blue-forest-bedroom.png" alt="Project Forest" />
-      <h3>Project Forest</h3>
-      <p>Camera da letto contemporanea, carta scenografica e luce indiretta.</p>
-    </article>
+<p>
 
-    <article>
-      <img src="noir-closet.png" alt="Project Noir" />
-      <h3>Project Noir</h3>
-      <p>Cabina armadio blu petrolio, nero opaco e illuminazione integrata.</p>
-    </article>
+Senza ispirazione esistono solo spazi corretti.
 
-    <article>
-      <img src="stone-bedroom.jpeg" alt="Project Stone" />
-      <h3>Project Stone</h3>
-      <p>Bagno materico con texture naturali, legno caldo e atmosfera spa.</p>
-    </article>
+<br><br>
 
-    <article>
-      <img src="living-frame.JPG" alt="Project Living Frame" />
-      <h3>Project Living Frame</h3>
-      <p>Living residenziale con volumi morbidi, luce naturale e verde interno.</p>
-    </article>
+Ma i progetti che durano nascono da un'idea.
 
-    <article>
-      <img src="nimbus-kitchen.png" alt="Project Nimbus" />
-      <h3>Project Nimbus</h3>
-      <p>Cucina scenografica con materiali importanti e forte identità visiva.</p>
-    </article>
+</p>
 
-    <article>
-      <img src="mood-board.png" alt="Moodboard" />
-      <h3>Material Board</h3>
-      <p>Studio cromatico e materico per ambienti coerenti e riconoscibili.</p>
-    </article>
-  </div>
 </section>
 
-<section id="services" class="services">
-  <span class="eyebrow">Servizi</span>
-  <h2>Cosa faccio</h2>
+<section id="projects">
 
-  <div class="service-grid">
-    <div>Interior Design</div>
-    <div>Consulenza Colore</div>
-    <div>Illuminazione</div>
-    <div>Arredi su Misura</div>
-    <div>Moodboard e Materiali</div>
-    <div>Styling Residenziale</div>
-  </div>
+<h2 class="section-title">Progetti</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<img src="nimbus-kitchen.png">
+
+<div class="project-content">
+
+<h3>Nimbus Kitchen</h3>
+
+<p>
+Una cucina scultorea progettata come cuore della casa.
+</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="noir-closet.png">
+
+<div class="project-content">
+
+<h3>Noir Closet</h3>
+
+<p>
+Materiali scuri, illuminazione integrata e geometrie essenziali.
+</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="blue-forest-bedroom.png">
+
+<div class="project-content">
+
+<h3>Blue Forest Bedroom</h3>
+
+<p>
+Un ambiente raccolto dove luce e materia costruiscono l'atmosfera.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="moodboard">
+
+<h2 class="section-title">Dal concept alla realizzazione</h2>
+
+<img src="mood-board.png">
+
 </section>
 
 <section id="contact" class="contact">
-  <h2>Contatti</h2>
-  <p>Per informazioni, collaborazioni o richieste di progetto.</p>
-  <a href="mailto:studio@ridolfistudio.com">studio@ridolfistudio.com</a>
-  <a href="https://www.instagram.com/ridolfistudio" target="_blank">@ridolfistudio</a>
-  <span>Roma</span>
+
+<h2 class="section-title">Contatti</h2>
+
+<p>studio@ridolfistudio.com</p>
+
+<br>
+
+<p>
+Instagram:
+<a href="https://instagram.com/ridolfistudio">
+@ridolfistudio
+</a>
+</p>
+
 </section>
 
 <footer>
-  RIDOLFI STUDIO · Interior Design
+
+RIDOLFI STUDIO © 2026
+
 </footer>
 
 </body>
