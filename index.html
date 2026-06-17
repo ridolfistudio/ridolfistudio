@@ -5,362 +5,316 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ridolfi Studio | Interior Design</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-background:#0f2230;
-color:#f4f1eb;
-font-family:Inter,sans-serif;
-line-height:1.7;
+html {
+  scroll-behavior: smooth;
 }
 
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:30px 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:100;
-background:rgba(15,34,48,.8);
-backdrop-filter:blur(10px);
+body {
+  background: #132C44;
+  color: #F1E5D0;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.7;
 }
 
-.logo{
-font-family:"Cormorant Garamond",serif;
-font-size:34px;
-letter-spacing:6px;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 82px;
+  padding: 0 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background: rgba(8, 18, 28, 0.58);
+  backdrop-filter: blur(14px);
 }
 
-nav a{
-color:#f4f1eb;
-text-decoration:none;
-margin-left:30px;
-font-size:14px;
-letter-spacing:2px;
+.site-logo {
+  height: 46px;
+  width: auto;
+  display: block;
 }
 
-.hero{
-height:100vh;
-background:url("nimbus-kitchen.png") center center/cover;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+nav a {
+  color: #F1E5D0;
+  text-decoration: none;
+  margin-left: 34px;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
-.hero-content{
-background:rgba(0,0,0,.35);
-padding:60px;
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(5,10,15,.35), rgba(5,10,15,.55)), url("nimbus-kitchen.png") center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 110px 24px 70px;
 }
 
-.hero h1{
-font-family:"Cormorant Garamond",serif;
-font-size:72px;
-font-weight:500;
-margin-bottom:20px;
+.hero-content {
+  max-width: 980px;
+  padding: 42px 50px;
+  background: rgba(5, 12, 18, 0.34);
 }
 
-.hero p{
-font-size:18px;
-max-width:700px;
-margin:auto;
+.hero h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(48px, 6vw, 86px);
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 24px;
+  color: #F1E5D0;
 }
 
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:14px 30px;
-border:1px solid #d8c7b0;
-color:#d8c7b0;
-text-decoration:none;
-letter-spacing:2px;
+.hero p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 17px;
+  color: #EFE6D8;
 }
 
-section{
-padding:120px 10%;
+.btn {
+  display: inline-block;
+  margin-top: 34px;
+  padding: 15px 34px;
+  border: 1px solid #D7B47D;
+  color: #132C44;
+  background: #D7B47D;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-.section-title{
-font-family:"Cormorant Garamond",serif;
-font-size:52px;
-margin-bottom:40px;
+section {
+  padding: 86px 9%;
 }
 
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
+.section-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(42px, 4vw, 62px);
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 34px;
 }
 
-.about img{
-width:100%;
-border-radius:4px;
+.about-section {
+  background: #F1E5D0;
+  color: #132C44;
 }
 
-.quote{
-background:#132b3d;
-text-align:center;
+.about {
+  display: grid;
+  grid-template-columns: 1.1fr 0.75fr;
+  gap: 70px;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
-.quote p{
-font-family:"Cormorant Garamond",serif;
-font-size:54px;
-max-width:900px;
-margin:auto;
+.about p {
+  font-size: 16px;
+  margin-bottom: 18px;
+  color: #20384B;
+  max-width: 620px;
 }
 
-.projects{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
+.about-image img {
+  width: 100%;
+  max-width: 370px;
+  display: block;
+  margin-left: auto;
+  filter: grayscale(100%);
 }
 
-.project{
-background:#162f42;
+.manifesto {
+  background: #102638;
+  text-align: center;
+  padding: 100px 9%;
 }
 
-.project img{
-width:100%;
-height:320px;
-object-fit:cover;
+.manifesto-inner {
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-.project-content{
-padding:25px;
+.manifesto h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(40px, 5vw, 72px);
+  font-weight: 500;
+  line-height: 1.14;
+  color: #F1E5D0;
 }
 
-.project h3{
-font-family:"Cormorant Garamond",serif;
-font-size:34px;
-margin-bottom:10px;
+.manifesto h2 span {
+  color: #D7B47D;
+  font-style: italic;
 }
 
-.moodboard img{
-width:100%;
+.projects-section {
+  background: #08141E;
 }
 
-.contact{
-text-align:center;
+.projects-header {
+  max-width: 1180px;
+  margin: 0 auto 44px;
 }
 
-.contact a{
-color:#d8c7b0;
-text-decoration:none;
+.projects {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 }
 
-footer{
-padding:50px;
-text-align:center;
-border-top:1px solid rgba(255,255,255,.1);
+.project {
+  background: #132C44;
+  overflow: hidden;
 }
 
-@media(max-width:900px){
-
-.about{
-grid-template-columns:1fr;
+.project img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  display: block;
 }
 
-.projects{
-grid-template-columns:1fr;
+.project-content {
+  padding: 26px 26px 30px;
 }
 
-.hero h1{
-font-size:48px;
+.project h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
-.quote p{
-font-size:36px;
+.project p {
+  font-size: 14px;
+  color: #D8CABC;
 }
 
-header{
-padding:20px;
+.moodboard {
+  background: #F1E5D0;
+  color: #132C44;
 }
 
+.moodboard-inner {
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
+.moodboard p {
+  max-width: 720px;
+  margin-bottom: 40px;
+  color: #20384B;
+}
+
+.moodboard img {
+  width: 100%;
+  display: block;
+}
+
+.contact {
+  background: #102638;
+  text-align: center;
+  padding: 90px 9%;
+}
+
+.contact p {
+  color: #EFE6D8;
+  margin-bottom: 24px;
+}
+
+.contact a {
+  display: block;
+  color: #D7B47D;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+footer {
+  padding: 34px;
+  text-align: center;
+  background: #061019;
+  color: #9D8F7D;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 900px) {
+  header {
+    height: 72px;
+    padding: 0 22px;
+  }
+
+  .site-logo {
+    height: 38px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero-content {
+    padding: 34px 24px;
+  }
+
+  section {
+    padding: 68px 7%;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .about-image img {
+    margin: 0;
+    max-width: 320px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project img {
+    height: 280px;
+  }
+
+  .manifesto {
+    padding: 76px 7%;
+  }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-
-<div class="logo">RIDOLFI STUDIO</div>
-
-<nav>
-<a href="#about">CHI SONO</a>
-<a href="#projects">PROGETTI</a>
-<a href="#contact">CONTATTI</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>Interior Design pensato per durare.</h1>
-
-<p>
-Progetti residenziali contemporanei dove estetica,
-funzionalità e atmosfera convivono in equilibrio.
-</p>
-
-<a href="#projects" class="btn">SCOPRI I PROGETTI</a>
-
-</div>
-
-</section>
-
-<section id="about">
-
-<h2 class="section-title">Chi Sono</h2>
-
-<div class="about">
-
-<div>
-
-<p>
-Mi chiamo Francesco Ridolfi.
-</p>
-
-<br>
-
-<p>
-Mi occupo di interior design residenziale con un approccio contemporaneo,
-attento ai materiali, alla luce e alla qualità della vita quotidiana.
-</p>
-
-<br>
-
-<p>
-Ogni progetto nasce dall'ascolto delle esigenze del cliente e dalla ricerca
-di soluzioni eleganti, funzionali e senza tempo.
-</p>
-
-</div>
-
-<img src="living-frame.jpg">
-
-</div>
-
-</section>
-
-<section class="quote">
-
-<p>
-
-Senza ispirazione esistono solo spazi corretti.
-
-<br><br>
-
-Ma i progetti che durano nascono da un'idea.
-
-</p>
-
-</section>
-
-<section id="projects">
-
-<h2 class="section-title">Progetti</h2>
-
-<div class="projects">
-
-<div class="project">
-
-<img src="nimbus-kitchen.png">
-
-<div class="project-content">
-
-<h3>Nimbus Kitchen</h3>
-
-<p>
-Una cucina scultorea progettata come cuore della casa.
-</p>
-
-</div>
-
-</div>
-
-<div class="project">
-
-<img src="noir-closet.png">
-
-<div class="project-content">
-
-<h3>Noir Closet</h3>
-
-<p>
-Materiali scuri, illuminazione integrata e geometrie essenziali.
-</p>
-
-</div>
-
-</div>
-
-<div class="project">
-
-<img src="blue-forest-bedroom.png">
-
-<div class="project-content">
-
-<h3>Blue Forest Bedroom</h3>
-
-<p>
-Un ambiente raccolto dove luce e materia costruiscono l'atmosfera.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="moodboard">
-
-<h2 class="section-title">Dal concept alla realizzazione</h2>
-
-<img src="mood-board.png">
-
-</section>
-
-<section id="contact" class="contact">
-
-<h2 class="section-title">Contatti</h2>
-
-<p>studio@ridolfistudio.com</p>
-
-<br>
-
-<p>
-Instagram:
-<a href="https://instagram.com/ridolfistudio">
-@ridolfistudio
-</a>
-</p>
-
-</section>
-
-<footer>
-
-RIDOLFI STUDIO © 2026
-
-</footer>
-
-</body>
-</html>
+  <a href="#top">
+    <img src="logo-ridolfi.PNG" alt="Ridolfi Studio" class="site-logo">
+  </a>
+
+  <nav>
+    <a href="#about">Chi sono</a>
+    <a href="#projects">Progetti</a>
