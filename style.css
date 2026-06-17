@@ -1,32 +1,260 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background:#0f1d29;
-    color:#f2ebe3;
-    font-family: Georgia, serif;
+html {
+  scroll-behavior: smooth;
 }
 
-.hero{
-    height:100vh;
-    background:#0f1d29;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+body {
+  background: #081722;
+  color: #f4eee6;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.hero h1{
-    font-size:5rem;
-    letter-spacing:10px;
-    font-weight:300;
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 28px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: linear-gradient(to bottom, rgba(8,23,34,.9), transparent);
 }
 
-.hero p{
-    margin-top:20px;
-    letter-spacing:6px;
-    color:#d7c2a3;
+.brand {
+  letter-spacing: 5px;
+  font-size: 13px;
+  color: #d8c0a0;
+}
+
+.menu a {
+  color: #f4eee6;
+  text-decoration: none;
+  margin-left: 28px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img:not(.logo) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  width: 440px;
+  max-width: 80%;
+  margin-bottom: 40px;
+}
+
+.hero h2,
+.about h2,
+.projects h2,
+.services h2,
+.contact h2 {
+  font-family: Georgia, serif;
+  font-weight: 300;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #d8c0a0;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+
+.button {
+  border: 1px solid #d8c0a0;
+  color: #d8c0a0;
+  text-decoration: none;
+  padding: 14px 30px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 110px 8%;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+  background: #0d1f2c;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about p {
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: #d9d0c4;
+}
+
+.eyebrow {
+  display: block;
+  color: #d8c0a0;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.manifesto {
+  background: #06131d;
+  text-align: center;
+  padding: 130px 10%;
+}
+
+.manifesto p {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  line-height: 1.5;
+}
+
+.manifesto em {
+  color: #d8a866;
+  font-style: italic;
+}
+
+.projects {
+  background: #081722;
+}
+
+.grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+
+article {
+  background: #0d1f2c;
+}
+
+article img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+article h3 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  padding: 24px 24px 8px;
+  color: #f4eee6;
+}
+
+article p {
+  padding: 0 24px 28px;
+  color: #c8beb2;
+  line-height: 1.6;
+}
+
+.services {
+  background: #0d1f2c;
+}
+
+.service-grid {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #d8c0a0;
+}
+
+.service-grid div {
+  background: #0d1f2c;
+  padding: 40px;
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.contact {
+  text-align: center;
+  background: #06131d;
+}
+
+.contact p {
+  color: #c8beb2;
+  margin-bottom: 30px;
+}
+
+.contact a,
+.contact span {
+  display: block;
+  color: #d8c0a0;
+  text-decoration: none;
+  margin: 12px 0;
+  letter-spacing: 1px;
+}
+
+footer {
+  padding: 35px;
+  text-align: center;
+  color: #8d8173;
+  font-size: 12px;
+  letter-spacing: 3px;
+  background: #050d13;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+
+  .about,
+  .grid,
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2,
+  .about h2,
+  .projects h2,
+  .services h2,
+  .contact h2 {
+    font-size: 36px;
+  }
+
+  .manifesto p {
+    font-size: 30px;
+  }
+
+  article img {
+    height: 280px;
+  }
 }
