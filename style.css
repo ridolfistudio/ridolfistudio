@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f1d29;
+    color:#f2ebe3;
+    font-family: Georgia, serif;
+}
+
+.hero{
+    height:100vh;
+    background:#0f1d29;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:5rem;
+    letter-spacing:10px;
+    font-weight:300;
+}
+
+.hero p{
+    margin-top:20px;
+    letter-spacing:6px;
+    color:#d7c2a3;
+}
