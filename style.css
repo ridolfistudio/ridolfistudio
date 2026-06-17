@@ -249,7 +249,14 @@ body {
   font-size: 18px;
   margin: 12px 0;
 }
-
+.contact-label {
+  margin-top: 24px;
+  margin-bottom: 4px;
+  color: #F1E5D0;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 footer {
   padding: 34px;
   text-align: center;
