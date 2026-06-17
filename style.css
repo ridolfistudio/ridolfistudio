@@ -151,7 +151,7 @@ body {
 .manifesto h2 {
   max-width: 980px;
   margin: 0 auto;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Bodoni Moda", serif;
   font-size: clamp(40px, 5vw, 72px);
   font-weight: 500;
   line-height: 1.14;
@@ -198,7 +198,7 @@ body {
 }
 
 .project-card h3 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Bodoni Moda", serif;
   font-size: 34px;
   font-weight: 500;
   margin-bottom: 10px;
