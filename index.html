@@ -1,321 +1,22 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ridolfi Studio | Interior Design</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #132C44;
-  color: #F1E5D0;
-  font-family: "Manrope", sans-serif;
-  line-height: 1.7;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 82px;
-  padding: 0 56px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-  background: rgba(8, 18, 28, 0.58);
-  backdrop-filter: blur(14px);
-}
-
-.site-logo {
-  height: 46px;
-  width: auto;
-  display: block;
-}
-
-nav a {
-  color: #F1E5D0;
-  text-decoration: none;
-  margin-left: 34px;
-  font-size: 12px;
-  letter-spacing: 2.4px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.hero {
-  min-height: 100vh;
-  background: linear-gradient(rgba(5,10,15,.35), rgba(5,10,15,.55)), url("nimbus-kitchen.png") center center / cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 110px 24px 70px;
-}
-
-.hero-content {
-  max-width: 980px;
-  padding: 42px 50px;
-  background: rgba(5, 12, 18, 0.34);
-}
-
-.hero h1 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(48px, 6vw, 86px);
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 24px;
-  color: #F1E5D0;
-}
-
-.hero p {
-  max-width: 720px;
-  margin: 0 auto;
-  font-size: 17px;
-  color: #EFE6D8;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 34px;
-  padding: 15px 34px;
-  border: 1px solid #D7B47D;
-  color: #132C44;
-  background: #D7B47D;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-section {
-  padding: 86px 9%;
-}
-
-.section-title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(42px, 4vw, 62px);
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 34px;
-}
-
-.about-section {
-  background: #F1E5D0;
-  color: #132C44;
-}
-
-.about {
-  display: grid;
-  grid-template-columns: 1.1fr 0.75fr;
-  gap: 70px;
-  align-items: center;
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.about p {
-  font-size: 16px;
-  margin-bottom: 18px;
-  color: #20384B;
-  max-width: 620px;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 370px;
-  display: block;
-  margin-left: auto;
-  filter: grayscale(100%);
-}
-
-.manifesto {
-  background: #102638;
-  text-align: center;
-  padding: 100px 9%;
-}
-
-.manifesto-inner {
-  max-width: 980px;
-  margin: 0 auto;
-}
-
-.manifesto h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(40px, 5vw, 72px);
-  font-weight: 500;
-  line-height: 1.14;
-  color: #F1E5D0;
-}
-
-.manifesto h2 span {
-  color: #D7B47D;
-  font-style: italic;
-}
-
-.projects-section {
-  background: #08141E;
-}
-
-.projects-header {
-  max-width: 1180px;
-  margin: 0 auto 44px;
-}
-
-.projects {
-  max-width: 1180px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
-
-.project {
-  background: #132C44;
-  overflow: hidden;
-}
-
-.project img {
-  width: 100%;
-  height: 330px;
-  object-fit: cover;
-  display: block;
-}
-
-.project-content {
-  padding: 26px 26px 30px;
-}
-
-.project h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 34px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.project p {
-  font-size: 14px;
-  color: #D8CABC;
-}
-
-.moodboard {
-  background: #F1E5D0;
-  color: #132C44;
-}
-
-.moodboard-inner {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.moodboard p {
-  max-width: 720px;
-  margin-bottom: 40px;
-  color: #20384B;
-}
-
-.moodboard img {
-  width: 100%;
-  display: block;
-}
-
-.contact {
-  background: #102638;
-  text-align: center;
-  padding: 90px 9%;
-}
-
-.contact p {
-  color: #EFE6D8;
-  margin-bottom: 24px;
-}
-
-.contact a {
-  display: block;
-  color: #D7B47D;
-  text-decoration: none;
-  font-size: 18px;
-  margin: 12px 0;
-}
-
-footer {
-  padding: 34px;
-  text-align: center;
-  background: #061019;
-  color: #9D8F7D;
-  font-size: 12px;
-  letter-spacing: 3px;
-}
-
-@media (max-width: 900px) {
-  header {
-    height: 72px;
-    padding: 0 22px;
-  }
-
-  .site-logo {
-    height: 38px;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .hero-content {
-    padding: 34px 24px;
-  }
-
-  section {
-    padding: 68px 7%;
-  }
-
-  .about {
-    grid-template-columns: 1fr;
-    gap: 42px;
-  }
-
-  .about-image img {
-    margin: 0;
-    max-width: 320px;
-  }
-
-  .projects {
-    grid-template-columns: 1fr;
-  }
-
-  .project img {
-    height: 280px;
-  }
-
-  .manifesto {
-    padding: 76px 7%;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ridolfi Studio | Interior Design</title>
+  <meta name="description" content="Ridolfi Studio, interior design residenziale contemporaneo a Roma.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <a href="#top">
+<header class="site-header">
+  <a href="#top" class="logo-link">
     <img src="logo-ridolfi.PNG" alt="Ridolfi Studio" class="site-logo">
   </a>
 
-  <nav>
+  <nav class="site-nav">
     <a href="#about">Chi sono</a>
     <a href="#projects">Progetti</a>
     <a href="#contact">Contatti</a>
@@ -324,90 +25,108 @@ footer {
 
 <main id="top">
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Interior design pensato per durare.</h1>
-    <p>
-      Progetto case dove materiali, luce e proporzioni costruiscono spazi eleganti,
-      funzionali e destinati a durare nel tempo.
-    </p>
-    <a href="#projects" class="btn">Scopri i progetti</a>
-  </div>
-</section>
-
-<section id="about" class="about-section">
-  <div class="about">
-    <div>
-      <h2 class="section-title">Chi sono</h2>
-      <p>Sono Francesco Ridolfi, interior designer specializzato in progetti residenziali contemporanei.</p>
-      <p>Ogni spazio nasce dall'equilibrio tra estetica, funzionalità e qualità della vita quotidiana.</p>
-      <p>Progetto ambienti eleganti, senza tempo, costruiti attorno alle persone che li vivono.</p>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Interior design pensato per durare.</h1>
+      <p>Progetto case dove materiali, luce e proporzioni costruiscono spazi eleganti, funzionali e destinati a durare nel tempo.</p>
+      <a href="#projects" class="btn">Scopri i progetti</a>
     </div>
+  </section>
 
-    <div class="about-image">
-      <img src="francesco-ridolfi.PNG" alt="Francesco Ridolfi Interior Designer">
+  <section id="about" class="about-section">
+    <div class="about">
+      <div class="about-text">
+        <h2>Chi sono</h2>
+        <p>Sono Francesco Ridolfi, interior designer specializzato in progetti residenziali contemporanei.</p>
+        <p>Ogni spazio nasce dall'equilibrio tra estetica, funzionalità e qualità della vita quotidiana.</p>
+        <p>Progetto ambienti eleganti, senza tempo, costruiti attorno alle persone che li vivono.</p>
+      </div>
+
+      <div class="about-image">
+        <img src="francesco-ridolfi.PNG" alt="Francesco Ridolfi Interior Designer">
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="manifesto">
-  <div class="manifesto-inner">
+  <section class="manifesto">
     <h2>
       Gli spazi più riusciti non seguono le mode.<br>
       <span>Nascono da un'idea e durano nel tempo.</span>
     </h2>
-  </div>
-</section>
+  </section>
 
-<section id="projects" class="projects-section">
-  <div class="projects-header">
-    <h2 class="section-title">Progetti</h2>
-  </div>
+  <section id="projects" class="projects-section">
+    <div class="section-heading">
+      <h2>Progetti</h2>
+    </div>
 
-  <div class="projects">
-    <article class="project">
-      <img src="nimbus-kitchen.png" alt="Nimbus Kitchen">
-      <div class="project-content">
-        <h3>Nimbus Kitchen</h3>
-        <p>Una cucina scultorea progettata come cuore visivo e funzionale della casa.</p>
-      </div>
-    </article>
+    <div class="projects-grid">
 
-    <article class="project">
-      <img src="noir-closet.png" alt="Noir Closet">
-      <div class="project-content">
-        <h3>Noir Closet</h3>
-        <p>Blu petrolio, nero opaco e luce integrata per una cabina armadio essenziale.</p>
-      </div>
-    </article>
+      <article class="project-card">
+        <img src="nimbus-kitchen.png" alt="Nimbus Kitchen">
+        <div>
+          <h3>Nimbus Kitchen</h3>
+          <p>Una cucina scultorea progettata come cuore visivo e funzionale della casa.</p>
+        </div>
+      </article>
 
-    <article class="project">
-      <img src="blue-forest-bedroom.png" alt="Blue Forest Bedroom">
-      <div class="project-content">
-        <h3>Blue Forest Bedroom</h3>
-        <p>Un ambiente raccolto dove pareti scenografiche, texture e luce costruiscono atmosfera.</p>
-      </div>
-    </article>
-  </div>
-</section>
+      <article class="project-card">
+        <img src="noir-closet.png" alt="Noir Closet">
+        <div>
+          <h3>Noir Closet</h3>
+          <p>Blu petrolio, nero opaco e luce integrata per una cabina armadio essenziale.</p>
+        </div>
+      </article>
 
-<section class="moodboard">
-  <div class="moodboard-inner">
-    <h2 class="section-title">Dal concept alla realizzazione</h2>
-    <p>
-      Ogni progetto nasce da una ricerca precisa: colori, materiali, luce e proporzioni
-      vengono selezionati prima ancora di diventare spazio.
-    </p>
-    <img src="mood-board.png" alt="Moodboard Ridolfi Studio">
-  </div>
-</section>
+      <article class="project-card">
+        <img src="blue-forest-bedroom.png" alt="Blue Forest Bedroom">
+        <div>
+          <h3>Blue Forest Bedroom</h3>
+          <p>Un ambiente raccolto dove pareti scenografiche, texture e luce costruiscono atmosfera.</p>
+        </div>
+      </article>
 
-<section id="contact" class="contact">
-  <h2 class="section-title">Contatti</h2>
-  <p>Per informazioni, collaborazioni o richieste di progetto.</p>
-  <a href="mailto:studio@ridolfistudio.com">studio@ridolfistudio.com</a>
-  <a href="https://instagram.com/ridolfistudio" target="_blank">@ridolfistudio</a>
-</section>
+      <article class="project-card">
+        <img src="living-frame.JPG" alt="Living Frame">
+        <div>
+          <h3>Living Frame</h3>
+          <p>Un living residenziale definito da volumi morbidi, luce naturale e verde interno.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="stone-bedroom.jpeg" alt="Stone Bathroom">
+        <div>
+          <h3>Stone Bathroom</h3>
+          <p>Texture materiche, legno caldo e dettagli spa per un bagno intimo e contemporaneo.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="mood-board.png" alt="Material Board">
+        <div>
+          <h3>Material Board</h3>
+          <p>Ricerca cromatica e materica come base di ogni progetto coerente e riconoscibile.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="moodboard-section">
+    <div class="moodboard-content">
+      <h2>Dal concept alla realizzazione</h2>
+      <p>Ogni progetto nasce da una ricerca precisa: colori, materiali, luce e proporzioni vengono selezionati prima ancora di diventare spazio.</p>
+      <img src="mood-board.png" alt="Moodboard Ridolfi Studio">
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contatti</h2>
+    <p>Per informazioni, collaborazioni o richieste di progetto.</p>
+    <a href="mailto:studio@ridolfistudio.com">studio@ridolfistudio.com</a>
+    <a href="https://instagram.com/ridolfistudio" target="_blank">@ridolfistudio</a>
+  </section>
 
 </main>
 
