@@ -311,3 +311,8 @@ footer {
     padding: 76px 7%;
   }
 }
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
