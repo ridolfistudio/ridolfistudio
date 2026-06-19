@@ -11,10 +11,10 @@
 
   <style>
     .project-hero {
-      min-height: 88vh;
+      min-height: 58vh;
       background-image:
         linear-gradient(rgba(5,10,15,.35), rgba(5,10,15,.62)),
-        url("living-frame-hero.jpeg");
+        url("living-frame-hero.jpg");
       background-size: cover;
       background-position: center;
       display: flex;
@@ -136,23 +136,24 @@
     }
 
     @media (max-width: 900px) {
-      .project-hero {
+
+    .project-hero {
         min-height: 72vh;
-      }
-
-      .gallery-grid,
-      .gallery-grid.after {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-grid img {
-        height: 300px;
-      }
-
-      .project-intro p {
-        font-size: 16px;
-      }
     }
+
+    .gallery-grid,
+    .gallery-grid.after {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: 300px;
+    }
+
+    .project-intro p {
+        font-size: 16px;
+    }
+}
   </style>
 </head>
 
