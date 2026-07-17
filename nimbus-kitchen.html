@@ -193,14 +193,23 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
-      gap: 70px;
+      gap: 50px;
       align-items: center;
     }
 
     .editorial-grid.reverse {
-      grid-template-columns: minmax(280px, 0.55fr) minmax(0, 1.45fr);
-    }
+  grid-template-columns: minmax(300px, 0.75fr) minmax(0, 1.25fr);
+}
+.editorial-grid.reverse .editorial-copy,
+.editorial-grid.reverse .editorial-image {
+  min-width: 0;
+}
 
+.editorial-grid.reverse .editorial-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
     .editorial-image img {
       width: 100%;
       display: block;
