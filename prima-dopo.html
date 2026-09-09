@@ -126,6 +126,25 @@
 <footer>
   RIDOLFI STUDIO © 2026
 </footer>
+<script>
+  document.querySelectorAll('.before-after-slider').forEach((slider) => {
+    const range = slider.querySelector('.ba-range');
+    const after = slider.querySelector('.ba-after');
+    const divider = slider.querySelector('.ba-divider');
+    const start = slider.dataset.start || 50;
 
+    function updateSlider(value) {
+      after.style.width = value + '%';
+      divider.style.left = value + '%';
+    }
+
+    range.value = start;
+    updateSlider(start);
+
+    range.addEventListener('input', (e) => {
+      updateSlider(e.target.value);
+    });
+  });
+</script>
 </body>
 </html>
