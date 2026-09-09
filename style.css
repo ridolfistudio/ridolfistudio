@@ -404,3 +404,166 @@ footer {
     padding: 60px 7%;
   }
 }
+/* =========================================
+   SLIDER PRIMA / DOPO
+   ========================================= */
+
+.before-after-item {
+  max-width: 1180px;
+  margin: 0 auto 80px;
+}
+
+.before-after-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #0d1b28;
+}
+
+.ba-image {
+  position: absolute;
+  inset: 0;
+}
+
+.ba-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+.ba-after {
+  width: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.ba-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.ba-divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  width: 2px;
+  background: rgba(241, 229, 208, 0.95);
+  box-shadow: 0 0 0 1px rgba(19, 44, 68, 0.18);
+}
+
+.ba-handle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F1E5D0;
+  color: #132C44;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.ba-label {
+  position: absolute;
+  top: 22px;
+  padding: 8px 14px;
+  background: rgba(8, 20, 30, 0.70);
+  color: #F1E5D0;
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 4;
+}
+
+.ba-label-left {
+  left: 22px;
+}
+
+.ba-label-right {
+  right: 22px;
+}
+
+.ba-range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+  z-index: 5;
+}
+
+.before-after-caption {
+  padding: 28px 0 0;
+}
+
+.before-after-caption h2 {
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  color: #F1E5D0;
+}
+
+.before-after-caption p {
+  max-width: 760px;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #D8CABC;
+}
+
+@media (max-width: 900px) {
+  .before-after-item {
+    margin-bottom: 64px;
+  }
+
+  .before-after-slider {
+    aspect-ratio: 4 / 5;
+  }
+
+  .ba-handle {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .ba-label {
+    top: 16px;
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    padding: 7px 12px;
+  }
+
+  .ba-label-left {
+    left: 16px;
+  }
+
+  .ba-label-right {
+    right: 16px;
+  }
+
+  .before-after-caption {
+    padding-top: 22px;
+  }
+}
