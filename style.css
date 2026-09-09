@@ -261,7 +261,6 @@ body {
 .contact a{
     font-size:22px;
 }
-}
 footer {
   padding: 34px;
   text-align: center;
@@ -328,4 +327,80 @@ footer {
 .project-link p {
   color: inherit;
   text-decoration: none;
+}
+/* =========================================
+   PAGINA PRIMA & DOPO
+   ========================================= */
+
+.before-after-page {
+  padding-top: 82px;
+  background: #F1E5D0;
+  color: #132C44;
+}
+
+/* Introduzione */
+
+.before-after-intro {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 100px 9% 90px;
+}
+
+.before-after-intro h1 {
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(52px, 6vw, 84px);
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 36px;
+  color: #132C44;
+}
+
+.before-after-intro p {
+  max-width: 760px;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #20384B;
+  margin-bottom: 14px;
+}
+
+/* Area che conterrà i confronti */
+
+.before-after-list {
+  background: #08141E;
+  color: #F1E5D0;
+  padding: 90px 9%;
+  min-height: 220px;
+}
+
+/* Evidenzia Prima & Dopo nel menu quando siamo sulla pagina */
+
+.site-nav a[aria-current="page"] {
+  color: #D7B47D;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+  .before-after-page {
+    padding-top: 72px;
+  }
+
+  .before-after-intro {
+    padding: 70px 7% 60px;
+  }
+
+  .before-after-intro h1 {
+    font-size: clamp(46px, 13vw, 64px);
+    margin-bottom: 28px;
+  }
+
+  .before-after-intro p {
+    font-size: 15px;
+  }
+
+  .before-after-list {
+    padding: 60px 7%;
+  }
 }
