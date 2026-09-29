@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Ridolfi;Francesco;;;
+FN:Francesco Ridolfi
+ORG:Ridolfi Studio
+TITLE:Interior Designer
+EMAIL;TYPE=INTERNET,WORK:studio@ridolfistudio.com
+URL;TYPE=WORK:https://ridolfistudio.com/
+NOTE:Interior design residenziale · Roma
+END:VCARD
